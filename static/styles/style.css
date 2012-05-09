@@ -1,0 +1,372 @@
+@charset "utf-8";
+* {
+  margin:0px;
+  padding:0px;
+
+}
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #C4A4A5;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+img { border: 0;}
+
+.tmbleft { float: left; margin-right:20px; margin-bottom:10px; }
+.tmbright { float: right; margin-left:20px; margin-bottom:10px; }
+.clearr { clear: right; }
+.clearl { clear: left; }
+
+dt { font-weight: normal; }
+	
+.imagenes {
+	text-align:center;
+	margin-top:10px;
+}
+	
+
+.imagenPortada {
+	float:right; 
+	margin:10px 0 10px 10px;
+	border:1px solid #000;
+}
+
+a {
+	color:#000;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+ul.inicio{
+	margin-bottom:20px;
+	padding-left:15px;
+}
+
+li.inicio{
+	padding:10px 0 0 35px;
+	list-style:none;
+}
+
+input.imprimir {
+    color:#750921;
+    background-color:#d47c8f;
+	border: 1px outset #ab1133;
+	font: 0.9em Arial, Helvetica, sans-serif;
+	padding: 2px 4px 2px 4px;
+	width: 100px;
+}
+
+/*Container----------------------------------------------------------------------------------------------*/
+#container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+/*fin_Container----------------------------------------------------------------------------------------------*/
+
+
+/*Header----------------------------------------------------------------------------------------------*/
+#header {
+	background-image:url(../images/titulo.jpg);
+	padding: 0 10px 0 20px;  
+	/* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	height:100px;
+}
+
+#caption {
+	padding:20px 0 0 0;
+}
+
+#title a {
+	font-family:"Trajan Pro";
+	letter-spacing:0;
+}
+
+#title h1 {
+	font-size:150%;
+	font-weight:bold;
+	letter-spacing:-0.05em;
+}
+
+#tagline {
+	border-top:1px solid #FFFFFF;
+	color:#FFFFFF;
+	float:left;
+	font-size:10px;
+	padding:0 3px;
+	text-decoration:none;
+}
+/*fin_Header----------------------------------------------------------------------------------------------*/
+
+
+#header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0 0 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	color:#FFF
+}
+
+#adorno {
+	background-image:url(../images/estetica.jpg);
+	height:20px;
+}
+
+#adorno2 {
+	background-image:url(../images/estetica2.jpg);
+	height:10px;
+}
+
+#menu
+{
+	margin:0 auto 0 auto;
+  	height:28px;
+  	background-color:#fff;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+}
+
+#menu ul
+{
+	list-style:none;
+}
+
+#menu li
+{
+  float:left;
+  display:block;
+  position:relative;
+  z-index:1 !important;
+  color:#AB1133;
+  border-right:1px solid #ab1133;
+  background-color:#fff;
+}
+
+#menu li a
+{
+ float:left;
+ height:28px;
+ line-height:28px;
+ display:block;
+ padding:0px 10px;
+ text-decoration:none;
+ font-size:13px !important;
+}
+
+
+#menu li a:hover
+{
+  color:#e0e9fc;
+  background-color:#ab1133;
+}
+
+	#menu li ul
+	{
+	  top:28px;
+	  left:0px;
+	  z-index:10;
+	  position:absolute;
+	  display:none;
+	}
+	
+	#menu li li
+	{
+	  clear:left;
+	  float:left;
+	}
+	
+	#menu li li a{ 
+	  color:#750921;
+	  width:120px;
+	  height:28px;
+	  line-height:28px;
+	  display:block;
+	  padding:0px 10px;
+	  border-top:1px solid #ab1133;
+	  border-left:1px solid #ab1133;
+	  background-color:#d47c8f;
+	  float:left;
+	  text-decoration:none;
+	  font-size:12px !important;
+	  font-weight:normal !important;
+	}
+	
+	#menu li li a:hover
+	{
+	  color:#e0e9fc;
+	  background-color:#ab1133;
+
+	}
+
+/*mainContent----------------------------------------------------------------------------------------------*/
+#mainContent {
+	padding: 0px 0px 40px 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #FFF;
+	background-image:url(../images/fondo_menu_lateral.jpg);
+	background-position:right bottom;
+	background-repeat:repeat-y;
+	font-size:13px;
+	min-height:400px;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+}
+
+#mainContent p{
+	margin:0;
+	margin-top:5px;
+	padding:0;
+	text-align:left;
+}
+
+#mainContent p a{
+	color:#555;
+}
+
+/*fin_mainContent----------------------------------------------------------------------------------------------*/
+
+#contenido {
+	float:left;
+	width:680px;
+}
+
+#menu_lateral {
+	color:#AB1133;
+	float:right;
+	width:180px;
+	margin-top:10px;
+}
+
+#menu_lateral ul{
+	
+	list-style:none;
+	
+}
+
+#menu_lateral ul.active{
+	border:2px solid #AB1133;
+	}
+
+#menu_lateral li{
+	margin:10px;
+}
+
+#menu_lateral a:hover{
+	background-color:#F2F2F2;
+	text-decoration:none;
+}
+
+#menu_lateral h1{
+	font-size:13px;
+}
+
+.titulo{
+	border-left:10px solid #AB1133;
+	border-right:10px solid #AB1133;
+	border-bottom:1px solid #AB1133;
+	border-top:1px solid #AB1133;
+	color:#AB1133;
+	font-weight:bold;
+	padding:0 0 0 10px;
+	text-align:center;
+	margin:10px 0 8px 0;
+	padding:4px 0 4px 0;
+	font-size:larger;
+	background-color:#DDDDDD;
+}
+
+.fecha{
+	color:#999999;
+	padding:0 0 5px 25px;
+	text-align:left;
+	font-weight:bold;
+	float:left;
+	width:180px;
+}
+
+.carrera{
+	color:#000;
+	text-align:left;
+	font-weight:bold;
+	background-color:#F6F6F6;
+}
+
+.logo{
+	padding:0 0 0 10px;
+	float: left;
+	background-color:#F6F6F6;
+}
+
+.info{
+	color:#666666;
+	padding:0 0 12px 220px;
+	text-align:left;
+	font-style:italic;
+	background-color:#F6F6F6;
+}
+
+.info ul {
+	margin-left:12px ;
+}
+
+.apartado{
+	border-left:10px solid #AB1133;
+	border-bottom:1px solid #AB1133;
+	color:#AB1133;
+	font-weight:bold;
+	padding:0 0 0 10px;
+	text-align:left;
+	margin:15px 0 8px 0;
+}
+
+.info_extra{
+	display:none;
+	padding: 5px;
+	margin: 0px 5px 10px 220px;
+	text-align:left;	
+	font-size:smaller;
+	background-color:#F6F6F6;
+}
+
+.info_extra li{
+	margin-left: 20px;
+	margin-top:5px;
+}
+
+.ampliar{
+	color:#999999;
+	font-family:"Courier New", Courier, monospace;
+	font-weight:bold;
+	padding:0 0 15px 220px;
+	text-align:center;
+}
+
+#footer {
+	background: no-repeat;
+	background-image:url(../images/pie.jpg);
+	width:900px;
+	height:130px;
+	margin: 0 auto;
+}
+
+#footer p{ 
+	padding: 8px 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	color:#FFF;
+	text-align:right;
+	font-size:13px;
+	margin:0;
+}
+
+#w3c{
+	padding:10px 20px;
+	float:left;
+}
+
+li.lista {
+	margin-left:15px;
+}
